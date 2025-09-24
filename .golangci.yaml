@@ -1,0 +1,44 @@
+version: "2"
+run:
+  concurrency: 4
+  go: 1.24.5
+output:
+  sort-order:
+    - linter
+    - severity
+    - file
+linters:
+  default: none
+  enable:
+    - errcheck
+    - govet
+    - ineffassign
+    - lll
+    - staticcheck
+    - unused
+  settings:
+    lll:
+      line-length: 120
+      tab-width: 2
+  exclusions:
+    generated: lax
+    presets:
+      - comments
+      - common-false-positives
+      - legacy
+      - std-error-handling
+    paths:
+      - third_party$
+      - builtin$
+      - examples$
+severity:
+  default: error
+formatters:
+  enable:
+    - gofmt
+  exclusions:
+    generated: lax
+    paths:
+      - third_party$
+      - builtin$
+      - examples$
