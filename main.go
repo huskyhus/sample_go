@@ -5,5 +5,6 @@ import (
 )
 
 func main() {
-	learning.BasicTypes()
+	// learning.BasicTypes()
+	learning.CompoundTypes()
 }
