@@ -1,11 +1,9 @@
 package main
 
-import "fmt"
+import (
+	learning "sample_go/pkg/learning_go"
+)
 
 func main() {
-	fmt.Println("Hello, World!")
-	a := 5
-	b := 10
-	c := a + b
-	fmt.Println(c)
+	learning.BasicTypes()
 }
