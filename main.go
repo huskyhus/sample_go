@@ -6,5 +6,7 @@ import (
 
 func main() {
 	// learning.BasicTypes()
-	learning.CompoundTypes()
+	// learning.CompoundTypes()
+	// learning.Shadowing()
+	learning.IfStatement()
 }
