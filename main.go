@@ -9,5 +9,6 @@ func main() {
 	// learning.CompoundTypes()
 	// learning.Shadowing()
 	// learning.IfStatement()
-	learning.ForStatement()
+	// learning.ForStatement()
+	learning.SwitchStatement()
 }

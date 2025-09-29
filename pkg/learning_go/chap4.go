@@ -107,3 +107,33 @@ func ForStatement() {
 
 	fmt.Println("For: end")
 }
+
+func SwitchStatement() {
+	fmt.Println("Switch: begin")
+
+	// simple switch
+	digit := 5
+	switch digit {
+	case 0, 1, 2, 3, 6, 7, 8, 9:
+		fmt.Println(digit, "is written in 1 stroke")
+	case 4, 5:
+		fmt.Println(digit, "is written in 2 strokes")
+	default:
+		fmt.Println(digit, "is not a single digit")
+	}
+
+	// blank switch
+	// this statement is similar to if-else statement
+	switch num := 135; {
+	case num%15 == 0:
+		fmt.Println(num, "FizzBuzz")
+	case num%3 == 0:
+		fmt.Println(num, "Fizz")
+	case num%5 == 0:
+		fmt.Println(num, "Buzz")
+	default:
+		fmt.Println(num)
+	}
+
+	fmt.Println("Switch: end")
+}
