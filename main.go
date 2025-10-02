@@ -10,5 +10,8 @@ func main() {
 	// learning.Shadowing()
 	// learning.IfStatement()
 	// learning.ForStatement()
-	learning.SwitchStatement()
+	// learning.SwitchStatement()
+	// learning.FunctionExample()
+	// learning.Cat("main.go")
+	learning.Cat2("pkg/learning_go/chap5.go")
 }
